@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* full background */
+body{
+	
+    min-height:100vh;
+	
+	background-image:url("/images/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* remove bootstrap container white look */
+.container{
+    background:transparent !important;
+}
+
+/* glass card */
+.card-box{
+    width:350px;
+    padding:35px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 8px 32px rgba(0,0,0,0.45);
+}
+
+.title{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+}
+
+/* inputs */
+.form-control{
+    background:rgba(255,255,255,0.25);
+    border:none;
+    color:white;
+}
+
+.form-control::placeholder{
+    color:#f1f1f1;
+}
+
+/* button */
+.btn-primary{
+    background:linear-gradient(45deg,#667eea,#764ba2);
+    border:none;
+    border-radius:12px;
+    font-weight:bold;
+    padding:10px;
+}
+
+.btn-primary:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
